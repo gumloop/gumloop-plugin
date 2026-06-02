@@ -1,0 +1,11 @@
+{
+  "name": "gumloop",
+  "description": "Connect Claude Code to Gumloop's hosted MCP server.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Gumloop",
+    "url": "https://gumloop.com"
+  },
+  "homepage": "https://gumloop.com",
+  "license": "MIT"
+}

@@ -1,0 +1,39 @@
+{
+  "name": "gumloop-plugin",
+  "version": "0.1.0",
+  "description": "Connect Codex to Gumloop's hosted MCP server.",
+  "author": {
+    "name": "Gumloop",
+    "url": "https://gumloop.com"
+  },
+  "homepage": "https://gumloop.com",
+  "license": "MIT",
+  "keywords": [
+    "gumloop",
+    "mcp"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Gumloop",
+    "shortDescription": "Connect to Gumloop's hosted MCP server.",
+    "longDescription": "Use Gumloop from Codex through the hosted MCP server. Authentication is handled by the MCP client.",
+    "developerName": "Gumloop",
+    "category": "Productivity",
+    "capabilities": [
+      "MCP",
+      "OAuth",
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://gumloop.com",
+    "brandColor": "#17C964",
+    "composerIcon": "./assets/gumloop.png",
+    "logo": "./assets/gumloop.png",
+    "defaultPrompt": [
+      "Show my Gumloop workspace.",
+      "Run a Gumloop workflow.",
+      "Check a Gumloop run."
+    ]
+  }
+}

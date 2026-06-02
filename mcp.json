@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "gumloop": {
+      "type": "http",
+      "url": "https://mcp.gumloop.com/gumloop/mcp"
+    }
+  }
+}

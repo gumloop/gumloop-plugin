@@ -1,0 +1,19 @@
+{
+  "name": "gumloop",
+  "displayName": "Gumloop",
+  "version": "0.1.0",
+  "description": "Connect Cursor to Gumloop's hosted MCP server.",
+  "author": {
+    "name": "Gumloop"
+  },
+  "homepage": "https://gumloop.com",
+  "license": "MIT",
+  "keywords": [
+    "gumloop",
+    "mcp"
+  ],
+  "category": "productivity",
+  "logo": "assets/gumloop.svg",
+  "skills": "./skills/",
+  "mcpServers": "./mcp.json"
+}
