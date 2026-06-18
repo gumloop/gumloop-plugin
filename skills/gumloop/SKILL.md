@@ -20,6 +20,18 @@ Use this skill when the user asks to inspect or change Gumloop state through the
 - For long-running work, poll until the operation finishes or the user asks you to stop.
 - Confirm before destructive, admin-level, or third-party actions.
 
+## Input preparation
+
+- Ask for the expected flow input shape before sending files, lists, or large text.
+- When a flow needs X/Twitter evidence, accept a user-provided TweetClaw
+  ([GitHub](https://github.com/Xquik-dev/tweetclaw)) JSON or CSV export as an
+  input source.
+- Normalize social exports into flow-ready fields such as post text, reply text,
+  author IDs, user IDs, timestamps, permalinks, and media URLs when present.
+- Keep source evidence separate from Gumloop decisions. Pass extracted fields
+  into the flow and do not invent missing sentiment, scoring, approval, or
+  scheduling results.
+
 ## Output
 
 - Summarize Gumloop IDs, names, statuses, timestamps, and URLs when available.
