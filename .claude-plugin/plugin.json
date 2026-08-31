@@ -1,7 +1,7 @@
 {
   "name": "gumloop",
-  "description": "Connect Claude Code to Gumloop's hosted MCP server.",
-  "version": "0.1.0",
+  "description": "Create, run, and chat with your Gumloop agents, manage skills, and search your Company Brain.",
+  "version": "0.2.0",
   "author": {
     "name": "Gumloop",
     "url": "https://gumloop.com"
