@@ -1,11 +1,11 @@
 ---
 name: gumloop
-description: Work with Gumloop through its hosted MCP server.
+description: Work with Gumloop agents, skills, runs, and Company Brain through the hosted MCP server.
 ---
 
 # Gumloop
 
-Use this skill when the user asks to inspect or change Gumloop state through the hosted Gumloop MCP server.
+Use this skill when the user asks to build, run, or inspect Gumloop agents, skills, sessions, or runs, or to search their Company Brain, through the hosted Gumloop MCP server.
 
 ## Connection
 

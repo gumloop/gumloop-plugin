@@ -1,7 +1,7 @@
 {
   "name": "gumloop-plugin",
-  "version": "0.1.0",
-  "description": "Connect Codex to Gumloop's hosted MCP server.",
+  "version": "0.2.0",
+  "description": "Create, run, and chat with your Gumloop agents, manage skills, and search your Company Brain.",
   "author": {
     "name": "Gumloop",
     "url": "https://gumloop.com"
@@ -10,14 +10,16 @@
   "license": "MIT",
   "keywords": [
     "gumloop",
+    "agents",
+    "ai-agents",
     "mcp"
   ],
   "skills": "./skills/",
   "mcpServers": "./.mcp.json",
   "interface": {
     "displayName": "Gumloop",
-    "shortDescription": "Connect to Gumloop's hosted MCP server.",
-    "longDescription": "Use Gumloop from Codex through the hosted MCP server. Authentication is handled by the MCP client.",
+    "shortDescription": "Build and run your team of Gumloop agents.",
+    "longDescription": "Work with Gumloop, the platform for building AI agents for work. Create, run, and chat with agents, manage their skills, review runs, and search your Company Brain through the hosted MCP server. Authentication is handled by the MCP client.",
     "developerName": "Gumloop",
     "category": "Productivity",
     "capabilities": [
@@ -31,9 +33,9 @@
     "composerIcon": "./assets/gumloop.png",
     "logo": "./assets/gumloop.png",
     "defaultPrompt": [
-      "Show my Gumloop workspace.",
-      "Run a Gumloop workflow.",
-      "Check a Gumloop run."
+      "List my Gumloop agents.",
+      "Start a session with one of my agents.",
+      "Check my agent's latest runs."
     ]
   }
 }

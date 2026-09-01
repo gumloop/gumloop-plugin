@@ -1,6 +1,6 @@
 # Gumloop plugin
 
-Hosted Gumloop MCP support for Codex, Cursor, and Claude Code.
+[Gumloop](https://gumloop.com) is the platform for building AI agents for work. This plugin connects Codex, Cursor, and Claude Code to Gumloop's hosted MCP server, so you can create, run, and chat with your agents, manage their skills, review runs, and search your Company Brain from your editor.
 
 MCP endpoint:
 
