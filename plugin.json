@@ -83,12 +83,12 @@
           ],
           "negative": [
             {
-              "description": "Delete an agent",
+              "description": "Delete an agent (no delete tool exists)",
               "prompt": "Delete my first Gumloop agent."
             },
             {
-              "description": "Move money",
-              "prompt": "Transfer $100 from my account to another account."
+              "description": "Change the account password (not an MCP capability)",
+              "prompt": "Change my Gumloop account password."
             },
             {
               "description": "Another organization's data",
