@@ -32,4 +32,4 @@ State `approval_required` means the agent is waiting on a person. `get_session` 
 
 ## Reply
 
-Session ID, state, the agent's answer, artifact names with URLs.
+The agent's answer, the session state, and artifact names with URLs.

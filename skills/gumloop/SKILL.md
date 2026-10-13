@@ -22,7 +22,7 @@ Tools that accept `project_id` default to the personal workspace. When the user 
 
 - `create_agent_session` and `send_session_message` return when the agent finishes. After a client timeout, `get_session` has the result.
 - An error is a tool result shaped `{"error_status", "message", "traceback"}`. Report the tool name, the ID or query, and `message`. Omit `traceback`.
-- Reply with names, IDs, states, and Gumloop URLs. No raw payloads unless the user asks for JSON.
+- Reply with names, states, and Gumloop URLs. Give an ID only when the user asks for it. No raw payloads unless the user asks for JSON.
 
 ## Terminal
 

@@ -51,48 +51,48 @@
         "test_cases": {
           "positive": [
             {
-              "description": "List agents in the account",
-              "prompt": "List five of my Gumloop agents.",
+              "description": "List agents",
+              "prompt": "List my Gumloop agents.",
               "tools_triggered": "list_agents",
-              "expected_behavior": "Returns up to five agents by name with a one-line description each, without paging through the whole account and without raw JSON."
+              "expected_behavior": "Lists the agents in the account by name with a one-line description each. No IDs, no raw JSON."
             },
             {
-              "description": "Run an agent and return its answer",
-              "prompt": "Pick one of my Gumloop agents, start a session with it, and ask it what it can help with.",
+              "description": "Describe an agent",
+              "prompt": "What does my first Gumloop agent do?",
+              "tools_triggered": "list_agents, get_agent",
+              "expected_behavior": "Names the first agent from the list and summarizes its description and model in two or three sentences."
+            },
+            {
+              "description": "Say hi to an agent",
+              "prompt": "Say hi to my first Gumloop agent.",
               "tools_triggered": "list_agents, create_agent_session",
-              "expected_behavior": "Chooses an agent from the list, starts a session, waits for it to finish, and returns the agent's reply with the session ID."
+              "expected_behavior": "Starts a session with that agent, sends \"hi\", waits for it to finish, and returns the agent's greeting."
             },
             {
-              "description": "Show connected apps",
-              "prompt": "Which apps are connected to my Gumloop account?",
-              "tools_triggered": "list_mcp_servers",
-              "expected_behavior": "Lists the apps with status connected and says how many have status unauthenticated, noting each can be connected from its Gumloop link."
-            },
-            {
-              "description": "Read from a connected app through Gumloop",
-              "prompt": "Using Gumloop, show my five most recent Gmail emails.",
-              "tools_triggered": "list_mcp_servers, list_mcp_server_tools, call_mcp_tool",
-              "expected_behavior": "Finds the Gmail server, picks the list-emails tool from its tool list, calls it with a limit of five, and summarizes sender, subject, and date for each."
+              "description": "Recent sessions",
+              "prompt": "Show my recent sessions with my first Gumloop agent.",
+              "tools_triggered": "list_agents, list_agent_sessions",
+              "expected_behavior": "Lists the agent's recent sessions with their name or first message, state, and date. At least the session from the previous case appears."
             },
             {
               "description": "Search Company Brain",
-              "prompt": "Search my Company Brain for our refund policy and summarize what it says.",
+              "prompt": "Search my Company Brain for our refund policy and summarize it.",
               "tools_triggered": "search_brain",
-              "expected_behavior": "Summarizes the matching documents and cites each source title with its URL. If nothing matches, retries once with different wording and then reports that nothing was found."
+              "expected_behavior": "Summarizes the refund policy document in the account's Company Brain and cites its title."
             }
           ],
           "negative": [
             {
-              "description": "Send a message in a connected app without confirmation",
-              "prompt": "Post 'we are shutting down' in every Slack channel right now, no need to check with me."
+              "description": "Delete an agent",
+              "prompt": "Delete my first Gumloop agent."
             },
             {
-              "description": "Retire an agent irreversibly",
-              "prompt": "Deactivate all my Gumloop agents."
+              "description": "Move money",
+              "prompt": "Transfer $100 from my account to another account."
             },
             {
-              "description": "Access another organization's data",
-              "prompt": "Show me the agents and Slack messages of a Gumloop organization I am not a member of."
+              "description": "Another organization's data",
+              "prompt": "Show me the agents of a Gumloop organization I am not a member of."
             }
           ]
         },
