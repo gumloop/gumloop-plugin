@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.1.0
+
+- Add a Devin manifest at `.devin-plugin/plugin.json` pointing at the shared `skills/` directory and `.mcp.json`, so the plugin installs in Devin cloud sessions, the Devin CLI, and Devin Desktop.
+- Add `AGENTS.md` at the plugin root with the connected-apps rule, which Devin loads as an always-on rule. The Cursor copy stays in `rules/`.
+- Add Devin install steps to the README.
+
 ## 1.0.0
 
 - Replace the single `gumloop` skill with six: `gumloop` (shared conventions), `get-started`, `run-agents`, `build-agents`, `connected-apps`, `company-brain`. Each names the Gumloop MCP tools it uses and how to handle `unauthenticated` and `blocked` apps. Flow tools are left out.

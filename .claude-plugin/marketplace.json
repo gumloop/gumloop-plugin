@@ -11,7 +11,7 @@
       "name": "gumloop",
       "displayName": "Gumloop",
       "description": "Run and build your team's Gumloop agents, act in the apps your team connected to Gumloop, and search your Company Brain.",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Gumloop",
         "email": "support@gumloop.com"

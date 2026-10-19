@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "gumloop",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Run and build your team's Gumloop agents, act in the apps your team connected to Gumloop, and search your Company Brain.",
   "author": {
     "name": "Gumloop",
